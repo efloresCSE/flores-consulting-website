@@ -2,44 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Flores Consulting</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Flores Consulting & Research LLC</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="./logo.png" alt="Flores Consulting & Research Logo" />
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html" class="active">About</a>
-      <a href="sample.html">Sample Work</a>
-      <a href="contact.html">Contact</a>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Header -->
+  <header class="header-bg">
+    <nav class="navbar navbar-expand-md navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png" alt="Logo" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active brand-color" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="about-page">
-    <h1>About Dr. Israel Flores</h1>
+  <!-- About Section -->
+  <main class="py-5">
+    <div class="container">
   
-    <div class="about-text">
-      <p><strong>Israel Flores partners with industry leaders in education, technology, and media who are committed to impacting the lives of children and their families through engaging and educational experiences.</strong></p>
+      <!-- Top Section: Intro Paragraph + Image -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-8">
+          <h1 class="fw-bold display-5 text-center mb-2">About</h1>
+          <div class="underline mb-4"></div>
+          <p class="mb-2">
+            Dr. Israel Flores partners with industry leaders in education, technology, and media who are committed to impacting the lives of children and their families through engaging and educational experiences. He has over 10 years of experience in evaluating, developing, and testing educational digital media designed to support children and their families. He brings a unique blend of academic insight and industry expertise to support clients in refining customer experiences to drive business goals and expanding opportunities to provide quality educational products through research driven insights.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="./portrait2.jpg" alt="Dr. Israel Flores" class="img-fluid rounded shadow w-75 w-md-50">
+
+        </div>
+      </div>
   
-      <p>He has over 10 years of experience evaluating and developing educational content for use by children and their caregivers...</p>
-  
-      <!-- full text continues here... -->
-  
-      <p>When he’s not supporting the development of children’s content or family resources, Israel is feeding his natural curiosity and desire to learn by playing video games, woodworking, and exploring nature with his wife and dogs.</p>
-    </div>
-  
-    <div class="about-photo">
-      <img src="./portrait.jpg" alt="Dr. Israel Flores Portrait">
+      <!-- Full-width Paragraphs -->
+      <div class="row">
+        <div class="col">
+          <p>
+            Before beginning his consulting business, Israel led learning design for children’s content ages 2–7 at the award-winning Noggin by Nickelodeon. Israel specialized in developing content to promote math, literacy, problem solving skills, and STEM background knowledge. He collaborated with internal cross-functional squad members, external vendors, and partner brand managers to create content featuring beloved Nickelodeon properties such as <em>Dora the Explorer, Blues Clues, Peppa Pig,</em> and <em>Paw Patrol</em>, among many others. As a curriculum expert, he created caregiver-facing resources and family activities that promoted Spanish language learning and extended play with Noggin digital experiences into the physical world. He also designed internal professional development content on the science of learning, multimodal instruction, scaffolding and differentiation to support his colleagues in developing age appropriate content.
+          </p>
+          <p>
+            As a mixed-methods researcher, with experience managing academic and industry research projects, he has leveraged both qualitative and quantitative methodologies to effectively understand user needs and behaviors. This includes working with participants ages 2 and up both in-person and online to understand consumer insights and inform decision-making on product strategy and content development.
+          </p>
+          <p>
+            Born to Mexican immigrants, Israel’s lived experience navigating bilingualism and multicultural contexts have shaped his work. He is passionate about ensuring content designed for children and families supports them in feeling they belong while being culturally, linguistically, and developmentally appropriate. He has led efforts to develop resources, trainings, and workshops which enhance the capabilities of content creators to develop products that reflect the diversity in which children and their families live in.
+          </p>
+          <p>
+            Israel earned his Ph.D. in psychology from Vanderbilt University where he explored the role of digital media and technology in supporting learning outcomes among native and non-native English speakers. He received funding for his doctoral research and studies from the National Science Foundation Graduate Research Fellowship Program. Israel worked with Vanderbilt’s Program for talented youth to develop and teach courses for elementary and middle-school students to promote engagement and interest in psychological sciences and experimental design.
+          </p>
+          <p>
+            When he's not supporting the development of children’s content or family resources, Israel is feeding his natural curiosity and desire to learn by playing video games, woodworking, and exploring nature with his wife and dogs.
+          </p>
+        </div>
+      </div>
+      
     </div>
   </main>
+  
 
-  <footer>
-    <p>&copy; 2025 Flores Consulting & Research LLC</p>
+  <!-- Footer -->
+  <footer class="footer-bg py-4 text-dark mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-4 gap-md-5">
+      <div class="px-4">
+        <a href="https://www.linkedin.com/in/flores-israel/" class="text-dark text-decoration-none" target="_blank">
+          <i class="bi bi-linkedin me-2"></i>LinkedIn
+        </a>
+      </div>
+      <div class="px-4">
+        <a href="mailto:israel@floresconsultingllc.com" class="text-dark text-decoration-none">
+          <i class="bi bi-envelope-fill me-2"></i>israel@floresconsultingllc.com
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

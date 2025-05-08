@@ -1,0 +1,139 @@
+.brand-color {
+  color: #d89b00;
+}
+
+.btn-gold {
+  background-color: #d89b00;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-gold:hover {
+  background-color: #b38200;
+  color: white;
+}
+
+.header-bg {
+  background-color: black;
+}
+
+.footer-bg {
+  background-color: #d89b00;
+}
+
+.circle-img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: #d89b00;
+  margin: 0.5rem auto 2rem;
+}
+
+.nav-link.active {
+  color: #d89b00 !important;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #d89b00;
+}
+
+/* Contact Page Styles */
+
+.contact-title {
+  font-weight: bold;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: #d89b00;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.form-control,
+textarea {
+  background-color: #e8a620;
+  border: none;
+  color: black;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+  color: #444;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #c17d00;
+}
+
+.btn-send {
+  background-color: #d89b00;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+}
+
+.btn-send:hover {
+  background-color: #c98900;
+}
+
+/* Contact Page Styles */
+
+.contact-title {
+  font-weight: bold;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: #d89b00;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.form-control,
+textarea {
+  background-color: #e8a620;
+  border: none;
+  color: black;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+  color: #444;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #c17d00;
+}
+
+.btn-send {
+  background-color: #d89b00;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+}
+
+.btn-send:hover {
+  background-color: #c98900;
+}
