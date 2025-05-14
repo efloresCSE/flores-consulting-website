@@ -2,146 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Work | Flores Consulting</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Work | Flores Consulting & Research LLC</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="./logo.png" alt="Flores Consulting Logo" />
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="sample.html" class="active">Sample Work</a>
-      <a href="contact.html">Contact</a>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Header -->
+  <header class="header-bg">
+    <nav class="navbar navbar-expand-md navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./logo.png" alt="Logo" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active brand-color" href="#">Sample Work</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="sample-page">
-    <h1>Sample Work</h1>
-    <div class="underline"></div>
-
-    <section class="sample-section">
-      <div class="sample-text">
-        <h2><u>High Quality Learning Experiences</u></h2>
-        <p>
-          I have served as the curriculum expert and learning experience designer on many top interactive pieces, such as <em>Ruff, Ruff, Repairs</em>. Advancing the development of content by identifying learning objectives, developing creative proposals, reviewing creative pitches, wireframes, script, and content builds.
-        </p>
-        <p>
-          Featured: <em>Ruff, Ruff, Repairs</em> lets little builders play with literacy activities while interacting with Rubble and his family to repair buildings in Builder cove.
-        </p>
-        <a class="btn" href="#">Learn More!</a>
-      </div>
-      <div class="sample-image">
-        <img src="ruff-image.jpg" alt="Ruff Ruff Repairs" />
-      </div>
+  <!-- Sample Work -->
+  <main>
+    <!-- Intro -->
+    <section class="py-5 text-center bg-white">
+      <h1 class="fw-bold display-5">Sample Work</h1>
+      <div class="underline mx-auto my-3"></div>
     </section>
 
-    <section class="orange-section">
-      <h2><u>Designing Experiences for Families</u></h2>
-      <p>
-        Caregivers can more directly influence learning when they choose to engage with their child. To that end, I have created caregiver resources to complement digital interactive content which supports caregivers in making the most out of shared experiences with their child.
-      </p>
+    <!-- Section 1 -->
+<section class="bg-white py-5">
+  <div class="container d-md-flex align-items-center justify-content-between">
+    <div class="col-md-6">
+      <h3 class="fw-bold text-decoration-underline">High Quality Learning Experiences</h3>
+      <p>I have served as the curriculum expert and learning experience designer on many top interactive pieces, such as <em>Ruff, Ruff, Repairs</em>. Advancing the development of content by identifying learning objectives, developing creative proposals, reviewing creative pitches, wireframes, script, and content builds.</p>
+      <p>Featured: <em>Ruff, Ruff, Repairs</em> lets little builders play with literacy activities while interacting with Rubble and his family to repair buildings in Builder Cove.</p>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="assets/ruff.jpg" class="img-fluid shadow rounded" alt="Ruff Ruff Repairs">
+      <a class="btn btn-gold mt-3">Learn More!</a>
+    </div>
+  </div>
+</section>
 
-      <div class="sample-duo">
-        <div class="sample-column">
-          <iframe src="https://drive.google.com/file/d/.../preview" allow="autoplay"></iframe>
-          <p>
-            Featured: As the learning lead on Noggin Knows Books, I leveraged best practices identified by academic researchers to develop the next generation of interactive stories.
-          </p>
-          <p>
-            Our unique books leveraged dialogic questions for caregivers to facilitate deeper conversation during shared book reading and learning moments.
-          </p>
-        </div>
-        <div class="sample-column">
-          <img src="dialogic-image.jpg" alt="Dialogic Reading" />
-          <a class="btn-dark" href="#">Read Me</a>
-          <p>
-            Featured: My accompanying blog for Noggin Knows Books provides techniques to make the most out of shared reading with both digital and print books.
-          </p>
-        </div>
+<!-- Section 2 -->
+<section class="bg-gold py-5">
+  <div class="container">
+    <h3 class="fw-bold text-decoration-underline">Designing Experiences for Families</h3>
+    <p>Caregivers can more directly influence learning when they choose to engage with their child. To that end, I have created caregiver resources to complement digital interactive content which supports caregivers in making the most out of shared experiences with their child.</p>
+    <div class="row text-center mt-4">
+      <div class="col-md-6 mb-4">
+        <img src="assets/noggin-knows.jpg" class="img-fluid shadow rounded" alt="Noggin Knows Book">
+        <p class="mt-3">Featured: As the learning lead on Noggin Knows Books, I leveraged best practices identified by academic researchers to develop the next generation of interactive stories. Our unique books leveraged dialogic questions for caregivers to facilitate deeper conversation during shared book reading and support their child’s oral language skills.</p>
       </div>
-    </section>
+      <div class="col-md-6 mb-4">
+        <img src="dialogic-reading-cover.png" class="img-fluid shadow rounded" alt="Dialogic Reading Cover">
+        <p class="mt-3">Featured: My accompanying blog for Noggin Knows Books provides techniques to make the most out of shared reading with both digital and print books.</p>
+        <a href="dialogic-reading.pdf" target="_blank" class="btn btn-dark mt-2">Read Me</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="sample-section">
-      <div class="sample-text">
-        <h2><u>Impactful Formative Research</u></h2>
-        <p>
-          As a lead researcher, I have carried out formative learning impact evaluations for linear and interactive content and provided ongoing recommendations to quickly improve content at various phases of development on an iterative basis, like our award-winning Blue’s Clues and you game.
+
+<!-- Section 3 -->
+<section class="bg-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="fw-bold text-decoration-underline">Impactful Formative Research</h3>
+        <p>As a lead researcher, I have carried out formative learning impact evaluations for linear and interactive content and provided ongoing recommendations to quickly improve content at various phases of development on an iterative basis, like our award-winning <em>Blue’s Clues and You</em> game.</p>
+        <p>I designed testing protocols, conducted 1-on-1 Zoom sessions with children & caregivers, and presented findings with design recommendations.</p>
+        <p>Featured: Noggin’s award-winning <em>Blue’s Clues</em> game brings players to Blue’s world and teaches them about caring for animals!</p>
+      </div>
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <video controls poster="BCY Farm Thumb.png" class="img-fluid shadow rounded" style="max-height: 360px;">
+          <source src="BCY Farm.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Section 4 -->
+<section class="bg-gold py-5">
+  <div class="container">
+    <h3 class="fw-bold text-decoration-underline">Creating for Belonging</h3>
+    <p>My lived experience navigating bilingualism and multicultural contexts plays a key role in ensuring content I work on supports children in feeling they belong while being culturally, linguistically, and developmentally appropriate.</p>
+    <p>I have led the development of resources, trainings, and workshops designed to enhance client capabilities for creating content that reflects the diversity of the world that children play in.</p>
+    <div class="row text-center mt-4">
+      
+      <!-- Family Picture Maker (Video) -->
+      <div class="col-md-6 mb-4">
+        <video controls poster="family-maker.png" class="img-fluid shadow rounded">
+          <source src="family-maker.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="mt-3">
+          Featured: <em>Family Picture Maker</em> empowers children to create their family portrait while the roulette-style game-play encourages thinking about physical similarities and differences.
         </p>
-        <p>
-          I designed testing protocols, conducting 1-on-1 zoom sessions with children & caregivers, and presenting findings with design recommendations.
+      </div>
+
+      <!-- El Juego de las Estatuas (PDF) -->
+      <div class="col-md-6 mb-4">
+        <img src="estatuas.png" class="img-fluid shadow rounded" alt="El Juego de las Estatuas">
+        <p class="mt-3">
+          Featured: <em>Juego de las Estatuas</em> helps children learn to distinguish between different sounds of music from various cultures while moving their bodies.
         </p>
-        <p>
-          Featured: Noggin’s award-winning Blue’s Clues game brings players to Blue’s world and teaches them about caring for animals!
-        </p>
-        <a class="btn" href="#">Learn More!</a>
+        <a href="estatuas.pdf" target="_blank" class="btn btn-dark mt-2">Read Me</a>
       </div>
-      <div class="sample-image">
-        <img src="bluesclues-image.jpg" alt="Blue's Clues" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Section 5 -->
+<section class="bg-white py-5">
+  <div class="container">
+    <h3 class="fw-bold text-decoration-underline">Academic Research and Expertise</h3>
+    <p>I am dedicated to understanding how children make sense of technology and digital media, how digital tools affect cognitive development & learning outcomes, and to developing approaches that support young learners in today’s digital landscape.</p>
+    <p>My areas of expertise include children’s symbolic development, best practices in educational media, and interactions between culture, language, and technology.</p>
+    <p class="fw-bold mt-4">Publications:</p>
+    <ul>
+      <li>Hwang, J. K., Mancilla-Martinez, J., Flores, I., & McClain, J. B. (2022). The relationship among home language use, parental beliefs, and Spanish-speaking children’s vocabulary. <em>International journal of bilingual education and bilingualism, 25</em>(4), 1175-1193.</li>
+      <li>McClain, J. B., Mancilla-Martinez, J., Flores, I., & Buckley, L. (2021). Translanguaging to support emergent bilingual students in English dominant preschools: An explanatory sequential mixed-method study. <em>Bilingual Research Journal, 44</em>(2), 158–173.</li>
+      <li>Russo Johnson, C., Flores, I., & Troseth, G. L. (2021). Do young children of the “selfie generation” understand digital photos as representations? <em>Human Behavior and Emerging Technologies, 3</em>(4), 512–524.</li>
+      <li>Troseth, G. L., Strouse, G. A., Flores, I., Stuckelman, Z. D., & Johnson, C. R. (2020). An enhanced eBook facilitates parent–child talk during shared reading by families of low socioeconomic status. <em>Early childhood research quarterly, 50</em>, 45–58.</li>
+      <li>Flores, I. (2020). The Role of Symbolic Experience in Learning to use Scale Models [PhDthesis]. Vanderbilt University.</li>
+      <li>Hwang, J. K., Mancilla-Martinez, J., McClain, J. B., Oh, M. H., & Flores, I. (2020). Spanish-speaking English learners’ English language and literacy skills: The predictive role of conceptually scored vocabulary. <em>Applied Psycholinguistics, 41</em>(1), 1–24.</li>
+      <li>Rasmussen, E. E., Strouse, G. A., Colwell, M. J., Russo Johnson, C., Holiday, S., Brady, K., Flores, I., Troseth, G., Wright, H. D., Densley, R. L., & others. (2019). Promoting preschoolers’ emotional competence through prosocial TV and mobile app use. <em>Media Psychology, 22</em>(1), 1–22.</li>
+      <li>Troseth, G. L., Flores, I., & Stuckelman, Z. D. (2019). When representation becomes reality: Interactive digital media and symbolic development. <em>Advances in child development and behavior, 56</em>, 65–108.</li>
+      <li>Flores, I. (2017). <em>Language brokering during shared ebook reading</em> [MastersThesis]. Vanderbilt University.</li>
+      <li>Strouse, G. A., Flores, I., Stuckelman, Z., Russo Johnson, C., & Troseth, G. (2017). Built-in questions support parent-child talk during shared reading of an electronic text. Poster Presented at the Biennial Meeting of the Cognitive Development Society, Portland, OR, USA. Available at: <a href="https://osf.io/Mr5d9" target="_blank">https://osf.io/Mr5d9</a>.</li>
+      <li>Troseth, G. L., Mancilla-Martinez, J., & Flores, I. (2018). Bilingual Children: Active Language Learners as Language Brokers. Active Learning from Infancy to Childhood: Social Motivation, Cognition, and Linguistic Mechanisms, 233–259.</li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer-bg py-4 text-dark mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-4 gap-md-5">
+      <div class="px-4">
+        <a href="https://www.linkedin.com/in/flores-israel/" class="text-dark text-decoration-none" target="_blank">
+          <i class="bi bi-linkedin me-2"></i>LinkedIn
+        </a>
       </div>
-    </section>
-
-    <section class="orange-section">
-      <h2><u>Creating for Belonging</u></h2>
-      <p>
-        My lived experience navigating bilingualism and multicultural contexts plays a key role in ensuring content I work on supports children in feeling they belong while being culturally, linguistically, and developmentally appropriate.
-      </p>
-      <p>
-        I have led the development of resources, trainings, and workshops designed to enhance client capabilities for creating content that reflects the diversity of the world that children play in.
-      </p>
-
-      <div class="sample-duo">
-        <div class="sample-column">
-          <img src="family-picture.jpg" alt="Family Picture Maker" />
-          <p>
-            As a learning experience designer, I have also worked closely with cross-functional teams to create linear and interactive content that helps children feel they belong, such as <em>Family Picture Maker</em>.
-          </p>
-          <p>
-            Featured: <em>Family Picture Maker</em> empowers children to create their family portrait while the roulette style game-play encourages thinking about physical similarities and differences.
-          </p>
-        </div>
-        <div class="sample-column">
-          <img src="estatutas.jpg" alt="Juego de las Estatuas" />
-          <a class="btn-dark" href="#">Read Me</a>
-          <p>
-            As an expert in child development and learning, I've created many play-based activities, like El Juego de las Estatuas (the statue game), that provide families with fun way to experience culture and learn about the world around them.
-          </p>
-          <p>
-            Featured: <em>Juego de las Estatuas</em> helps children will learn to distinguish between different sounds of music from various cultures while moving their bodies.
-          </p>
-        </div>
+      <div class="px-4">
+        <a href="mailto:israel@floresconsultingllc.com" class="text-dark text-decoration-none">
+          <i class="bi bi-envelope-fill me-2"></i>israel@floresconsultingllc.com
+        </a>
       </div>
-    </section>
-
-    <section class="sample-section">
-      <h2><u>Academic Research and Expertise</u></h2>
-      <p>
-        I am dedicated to understanding how children make sense of technology and digital media, how digital tools affect cognitive development & learning outcomes, and to developing approaches that support young learners in today’s digital landscape.
-      </p>
-      <p>
-        My areas of expertise include children’s symbolic development, best practices in educational media, and interactions between culture, language, and technology.
-      </p>
-
-      <h3><em>Publications:</em></h3>
-      <!-- Use <ul> with <li> if desired, else keep as <p> -->
-      <p>Hwang, J. K., Mancilla-Martinez, J., Flores, I., & McClain, J. B. (2022). ...</p>
-      <p>McClain, J. B., Mancilla-Martinez, J., Flores, I., & Buckley, L. (2021). ...</p>
-      <p>Russo Johnson, C., Flores, I., & Troseth, G. L. (2021). ...</p>
-      <p><a href="#">Troseth, G. L., Strouse, G. A., Flores, I., ... (2020). ...</a></p>
-      <p>Flores, I. (2020). The Role of Symbolic Experience ...</p>
-      <p>... etc.</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <span>🔗 LinkedIn</span>
-      <span>✉️ israel@floresconsultingllc.com</span>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -137,3 +137,7 @@ textarea::placeholder {
 .btn-send:hover {
   background-color: #c98900;
 }
+
+.bg-gold {
+  background-color: #eaa41b; /* or your preferred gold tone */
+}

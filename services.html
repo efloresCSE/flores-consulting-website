@@ -3,99 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Flores Consulting</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>Services | Flores Consulting & Research LLC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="./logo.png" alt="Flores Consulting & Research Logo" />
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="about.html">About</a>
-      <a href="sample.html">Sample Work</a>
-      <a href="contact.html">Contact</a>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <header class="header-bg">
+    <nav class="navbar navbar-expand-md navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png" alt="Logo" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active brand-color" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="sample.html">Sample Work</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="services-page">
-    <h1>Services</h1>
-    <p class="intro">
-      Whether you are looking for content development or research support, Dr. Flores brings a unique blend of academic insights and industry expertise to refining customer experiences that will drive business goals and expand opportunities to provide quality educational products through research-driven insights.
-    </p>
-    <h3 class="lang-note">English & Spanish</h3>
-  
-    <div class="services-grid">
-      <!-- Content Development Column -->
-      <div class="services-column">
-        <h2>Content Development</h2>
-        <p>With expertise in child development, multiculturalism, and learner-centered design, I support clients in creating engaging and innovative experiences that promote deeper learning and reflect the diversity of the world that children play in.</p>
-  
-        <h4>Production</h4>
+  <!-- Services -->
+  <main class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold display-6">Services</h2>
+      <div class="underline mb-4 mx-auto"></div>
+
+      <section class="mb-5">
+        <h3 class="fw-bold">Content Development Support</h3>
+        <p>Consultation for businesses creating children’s educational media and digital products. Provide expert guidance to support your team in creating effective, engaging, and educationally sound digital media and technology experiences for children. This includes providing strategic insights to enhance user experiences (UX), content effectiveness, and overall product impact.</p>
         <ul>
-          <li>Pitches/Creative Proposals</li>
-          <li>Show and character bibles</li>
-          <li>Scripts</li>
-          <li>Storyboards, wireframes, animatics</li>
-          <li>Character designs</li>
-          <li>Prototype and build review</li>
+          <li>Content audit and developmental alignment against age-appropriate, research-backed educational standards</li>
+          <li>User experience (UX) and interface design reviews (e.g., script and asset reviews for usability, engagement, and learning alignment)</li>
+          <li>Content development support</li>
+          <li>Develop standards-aligned learning objectives</li>
+          <li>Customized training sessions with hands-on activities to immerse teams in content-specific learning goals</li>
+          <li>Develop complementary caregiver/educator resources and extension activities</li>
+          <li>Strategic recommendations to increase child and caregiver engagement based on industry standards and trends</li>
         </ul>
-  
-        <h4>Curriculum Design</h4>
+      </section>
+
+      <section class="mb-5">
+        <h3 class="fw-bold">Playtesting and Early Childhood Product Validation</h3>
+        <p>Hands-on playtesting services focused on observing real interactions between children and educational products. This includes assessing usability, engagement, learning potential, and developmental appropriateness through structured sessions with children and caregivers.</p>
         <ul>
-          <li>Linear shows/videos, interactive books, games</li>
-          <li>Creating standards-aligned learning objectives</li>
-          <li>Designing for solo and co-play</li>
-          <li>Guidelines for scaffolding</li>
-          <li>Caregiver-facing resources</li>
-          <li>Family extension activities</li>
+          <li>Playtest session design and facilitation</li>
+          <li>Observational studies and interaction analysis</li>
+          <li>Feedback collection from children and caregivers</li>
+          <li>Summative evaluations of specific products or content (linear and interactive)</li>
         </ul>
-  
-        <h4>Multicultural Design</h4>
+      </section>
+
+      <section class="mb-5">
+        <h3 class="fw-bold">Consumer Insights Research and Analysis</h3>
+        <p>Research-driven insights into caregiver, educator, and family behaviors, preferences, needs, and pain points. Combining qualitative and quantitative methods to uncover motivations, barriers, and market opportunities for children's media and educational products.</p>
         <ul>
-          <li>Culturally and linguistically sensitive designs</li>
-          <li>Spanish language expertise</li>
+          <li>Surveys, interviews, and focus groups with caregivers and educators</li>
+          <li>Behavioral and attitudinal trend analysis</li>
+          <li>Market segmentation and persona development</li>
+          <li>Strategic recommendations to inform product positioning and messaging</li>
         </ul>
-      </div>
-  
-      <!-- Research Column -->
-      <div class="services-column">
-        <h2>Research</h2>
-        <p>As a mixed-methods researcher, I offer robust testing protocols to inform decision-making on product strategy and content development. I have expertise in conducting research with participants ages 2 and up.</p>
-  
-        <h4>Qualitative Research</h4>
+      </section>
+
+      <section>
+        <h3 class="fw-bold">Multicultural and Inclusive Content Development</h3>
+        <p>Specialized consulting focused on ensuring educational media and products authentically represent and resonate with diverse audiences. This service helps build culturally relevant and inclusive experiences that foster meaningful connections and learning among children and their caregivers.</p>
         <ul>
-          <li>Focus groups</li>
-          <li>1-on-1 interviews</li>
-          <li>In-person and Online</li>
-          <li>Ethnographies</li>
-          <li>Diary Studies</li>
+          <li>Cultural representation audits and gap analysis</li>
+          <li>Recommendations for authentic content integration</li>
+          <li>Customized toolkits and resource development</li>
         </ul>
-  
-        <h4>Quantitative Research</h4>
-        <ul>
-          <li>Questionnaire Development</li>
-          <li>Correlational Research</li>
-          <li>Experimental Design</li>
-          <li>Data Analysis</li>
-        </ul>
-  
-        <h4>Product Development</h4>
-        <ul>
-          <li>Concept Testing</li>
-          <li>Competitive landscape analyses</li>
-          <li>Paper testing</li>
-          <li>Testing of Usability, Alpha, and Beta builds</li>
-        </ul>
-      </div>
+      </section>
     </div>
   </main>
-  
 
-  <footer>
-    <p>&copy; 2025 Flores Consulting & Research LLC</p>
+  <!-- Footer -->
+  <footer class="footer-bg py-4 text-dark mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-4 gap-md-5">
+      <div class="px-4">
+        <a href="https://www.linkedin.com/in/flores-israel/" class="text-dark text-decoration-none" target="_blank">
+          <i class="bi bi-linkedin me-2"></i>LinkedIn
+        </a>
+      </div>
+      <div class="px-4">
+        <a href="mailto:israel@floresconsultingllc.com" class="text-dark text-decoration-none">
+          <i class="bi bi-envelope-fill me-2"></i>israel@floresconsultingllc.com
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
