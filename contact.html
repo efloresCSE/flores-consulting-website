@@ -41,27 +41,28 @@
       <h2 class="text-center contact-title display-6">Contact Me</h2>
       <div class="underline"></div>
 
-      <form class="mx-auto" style="max-width: 600px;">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name*</label>
-          <input type="text" class="form-control" id="name" placeholder="Your name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your email*</label>
-          <input type="email" class="form-control" id="email" placeholder="Your email address" required>
-        </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" placeholder="Subject">
-        </div>
-        <div class="mb-4">
-          <label for="message" class="form-label">Message*</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-send">Send</button>
-        </div>
-      </form>
+      <form action="https://formsubmit.co/israel@floresconsultingllc.com" method="POST" class="mx-auto" style="max-width: 600px;">
+  <input type="hidden" name="_captcha" value="false">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name*</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Your email*</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
+  </div>
+  <div class="mb-3">
+    <label for="subject" class="form-label">Subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+  </div>
+  <div class="mb-4">
+    <label for="message" class="form-label">Message*</label>
+    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+  </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-send">Send</button>
+  </div>
+</form>
     </div>
   </main>
 
